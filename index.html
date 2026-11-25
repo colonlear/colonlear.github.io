@@ -1,0 +1,1592 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>直捣穴底_高清免费播放视频_原创纪实影像官方平台</title>
+<meta name="description" content="直捣穴底官方网站，专注洞穴探险与地质纪实的高清免费播放视频平台，汇聚原创探险影像、专业地质科普与创作者社区，持续输出值得信赖的精品内容。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1a22'/%3E%3Cpath d='M10 46 L26 18 L38 38 L44 28 L54 46 Z' fill='%2318c39a'/%3E%3Ccircle cx='46' cy='18' r='5' fill='%23f2b544'/%3E%3C/svg%3E">
+<style>
+:root{
+  --xw-ink:#0f1a22;
+  --xw-ink-2:#1d2c37;
+  --xw-mist:#eef2f4;
+  --xw-paper:#f7f9fa;
+  --xw-line:#d8e1e6;
+  --xw-jade:#18c39a;
+  --xw-jade-deep:#0e8f70;
+  --xw-amber:#f2b544;
+  --xw-slate:#5d7180;
+  --xw-white:#ffffff;
+  --xw-radius:14px;
+  --xw-shadow:0 10px 30px rgba(15,26,34,.08);
+  --xw-head-h:118px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--xw-head-h)}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  color:var(--xw-ink);
+  background:var(--xw-paper);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul,ol{list-style:none}
+details summary{cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+
+/* ============ 吸顶：公告条 + 页头 ============ */
+.xw-stickwrap{
+  position:sticky;top:0;z-index:120;
+  box-shadow:0 2px 14px rgba(15,26,34,.07);
+}
+.xw-notice{
+  background:linear-gradient(90deg,#0f1a22,#1d3b34 55%,#0e8f70);
+  color:#e8f6f1;
+  font-size:13px;
+  padding:8px 0;
+}
+.xw-notice__inner{
+  max-width:1220px;margin:0 auto;padding:0 22px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+}
+.xw-notice__badge{
+  background:var(--xw-amber);color:#241a04;font-weight:700;
+  font-size:11px;letter-spacing:.5px;border-radius:4px;padding:1px 7px;flex:0 0 auto;
+}
+.xw-notice__text{flex:1 1 320px;min-width:0}
+.xw-notice__text b{color:#fff}
+.xw-notice__link{
+  flex:0 0 auto;color:#bfe9dc;border-bottom:1px dashed #4f9c86;font-size:12.5px;
+}
+.xw-notice__link:hover{color:#fff;border-bottom-color:#fff}
+
+.xw-header{
+  background:rgba(247,249,250,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--xw-line);
+}
+.xw-header__inner{
+  max-width:1220px;margin:0 auto;padding:12px 22px;
+  display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+}
+.xw-brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.xw-brand__mark{
+  width:40px;height:40px;border-radius:11px;background:var(--xw-ink);
+  display:grid;place-items:center;flex:0 0 auto;
+}
+.xw-brand__mark svg{width:24px;height:24px}
+.xw-brand__name{font-size:18px;font-weight:800;letter-spacing:.5px;line-height:1.15}
+.xw-brand__sub{font-size:11px;color:var(--xw-slate);letter-spacing:2px;line-height:1.3}
+
+.xw-nav{flex:1 1 auto;display:flex;gap:4px;flex-wrap:wrap}
+.xw-nav a{
+  font-size:14px;color:var(--xw-ink-2);padding:7px 11px;border-radius:8px;
+  transition:.18s;white-space:nowrap;
+}
+.xw-nav a:hover,.xw-nav a.is-active{background:#dff3ec;color:var(--xw-jade-deep)}
+
+.xw-search{
+  flex:0 1 250px;display:flex;align-items:center;gap:0;
+  border:1px solid var(--xw-line);border-radius:10px;background:#fff;overflow:hidden;
+}
+.xw-search input{
+  flex:1 1 auto;min-width:0;border:none;outline:none;padding:8px 11px;font-size:13.5px;background:transparent;
+}
+.xw-search button{
+  flex:0 0 auto;padding:8px 13px;background:var(--xw-ink);color:#fff;font-size:13px;
+}
+.xw-search button:hover{background:var(--xw-jade-deep)}
+.xw-search__hint{
+  flex:1 1 100%;font-size:12px;color:var(--xw-jade-deep);padding-top:2px;min-height:0;
+}
+
+.xw-burger{
+  display:none;width:40px;height:38px;border-radius:9px;border:1px solid var(--xw-line);
+  background:#fff;place-items:center;flex:0 0 auto;
+}
+.xw-burger span{display:block;width:18px;height:2px;background:var(--xw-ink);margin:3px auto;border-radius:2px}
+
+/* ============ 通用容器 ============ */
+.xw-wrap{max-width:1220px;margin:0 auto;padding:0 22px}
+.xw-section{padding:52px 0}
+.xw-section--alt{background:var(--xw-white);border-top:1px solid var(--xw-line);border-bottom:1px solid var(--xw-line)}
+.xw-eyebrow{
+  font-size:12.5px;letter-spacing:2.4px;color:var(--xw-jade-deep);font-weight:700;
+  display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;
+}
+.xw-eyebrow::before{content:"";width:22px;height:2px;background:var(--xw-jade)}
+.xw-h2{
+  font-size:clamp(21px,2.5vw,29px);font-weight:800;line-height:1.35;letter-spacing:.3px;
+  margin-bottom:12px;
+}
+.xw-h2 em{font-style:normal;color:var(--xw-jade-deep)}
+.xw-lead{color:var(--xw-slate);font-size:15px;max-width:820px;margin-bottom:26px}
+.xw-h3{font-size:17px;font-weight:800;line-height:1.5;margin-bottom:8px}
+
+/* ============ 按钮 ============ */
+.xw-btn{
+  display:inline-flex;align-items:center;gap:7px;padding:10px 18px;border-radius:10px;
+  font-size:14px;font-weight:700;transition:.18s;border:1px solid transparent;
+}
+.xw-btn--solid{background:var(--xw-jade-deep);color:#fff}
+.xw-btn--solid:hover{background:#0a7a5f;transform:translateY(-1px)}
+.xw-btn--ghost{background:transparent;color:var(--xw-ink);border-color:var(--xw-line)}
+.xw-btn--ghost:hover{border-color:var(--xw-ink);background:#fff}
+.xw-btn--amber{background:var(--xw-amber);color:#241a04}
+.xw-btn--amber:hover{background:#e5a52f}
+.xw-btn--sm{padding:6px 12px;font-size:12.5px;border-radius:8px}
+
+/* ============ 首屏：左文右侧大图 + 数据条 ============ */
+.xw-hero{padding:40px 0 16px;background:
+  radial-gradient(1200px 380px at 88% -80px,rgba(24,195,154,.14),transparent 70%),
+  linear-gradient(180deg,#f7f9fa,#eef2f4);
+}
+.xw-hero__grid{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:40px;align-items:center;
+}
+.xw-hero__tag{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;
+  background:#dff3ec;color:var(--xw-jade-deep);border-radius:999px;padding:5px 14px;margin-bottom:16px;
+}
+.xw-hero h1{
+  font-size:clamp(28px,3.9vw,46px);line-height:1.18;font-weight:900;letter-spacing:-.4px;
+  margin-bottom:16px;
+}
+.xw-hero h1 span{color:var(--xw-jade-deep);display:block;font-size:.58em;letter-spacing:1px;margin-top:8px;font-weight:800}
+.xw-hero__intro{color:var(--xw-ink-2);font-size:15px;margin-bottom:20px;max-width:600px}
+.xw-hero__actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.xw-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;
+  border-top:1px solid var(--xw-line);padding-top:18px;
+}
+.xw-stats__num{font-size:clamp(20px,2.4vw,26px);font-weight:900;color:var(--xw-ink);letter-spacing:-.5px}
+.xw-stats__num small{font-size:12px;color:var(--xw-jade-deep);font-weight:700;margin-left:3px}
+.xw-stats__label{font-size:12.5px;color:var(--xw-slate)}
+.xw-hero__visual{position:relative}
+.xw-hero__frame{
+  border-radius:22px;overflow:hidden;box-shadow:0 24px 60px rgba(15,26,34,.22);
+  aspect-ratio:4/3.15;background:#0f1a22;
+}
+.xw-hero__frame img{width:100%;height:100%;object-fit:cover}
+.xw-hero__chip{
+  position:absolute;left:-14px;bottom:22px;background:#fff;border-radius:14px;
+  padding:11px 15px;box-shadow:var(--xw-shadow);display:flex;align-items:center;gap:10px;
+  max-width:80%;
+}
+.xw-hero__chip .xw-dot{
+  width:34px;height:34px;border-radius:50%;background:var(--xw-jade);display:grid;place-items:center;flex:0 0 auto;
+}
+.xw-hero__chip .xw-dot svg{width:14px;height:14px}
+.xw-hero__chip b{font-size:13px;display:block;line-height:1.3}
+.xw-hero__chip span{font-size:11.5px;color:var(--xw-slate);display:block;line-height:1.35}
+
+/* ============ 焦点内容 ============ */
+.xw-focus{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;align-items:start}
+.xw-focus__main{
+  background:#fff;border:1px solid var(--xw-line);border-radius:var(--xw-radius);overflow:hidden;
+  box-shadow:var(--xw-shadow);transition:.2s;
+}
+.xw-focus__main:hover{transform:translateY(-3px)}
+.xw-focus__cover{aspect-ratio:16/9;overflow:hidden;position:relative;background:#132029}
+.xw-focus__cover img{width:100%;height:100%;object-fit:cover}
+.xw-badge{
+  position:absolute;top:12px;left:12px;background:rgba(15,26,34,.82);color:#fff;
+  font-size:11.5px;padding:4px 10px;border-radius:6px;letter-spacing:1px;
+}
+.xw-badge--jade{background:var(--xw-jade);color:#03251c;font-weight:800}
+.xw-focus__body{padding:18px 20px 20px}
+.xw-focus__body p{font-size:14px;color:var(--xw-slate);margin:8px 0 14px}
+.xw-meta{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--xw-slate);align-items:center}
+.xw-meta b{color:var(--xw-ink-2);font-weight:700}
+.xw-focus__list{display:flex;flex-direction:column;gap:14px}
+.xw-mini{
+  display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;background:#fff;
+  border:1px solid var(--xw-line);border-radius:12px;padding:12px;transition:.18s;
+}
+.xw-mini:hover{border-color:var(--xw-jade);box-shadow:0 8px 22px rgba(24,195,154,.14)}
+.xw-mini__thumb{aspect-ratio:4/3;border-radius:8px;overflow:hidden;background:#132029}
+.xw-mini__thumb img{width:100%;height:100%;object-fit:cover}
+.xw-mini h4{font-size:14.5px;font-weight:800;line-height:1.45;margin-bottom:4px}
+.xw-mini p{font-size:12.5px;color:var(--xw-slate);line-height:1.6;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+/* ============ 视频列表 ============ */
+.xw-vlist{display:flex;flex-direction:column;gap:0;background:#fff;border:1px solid var(--xw-line);border-radius:var(--xw-radius);overflow:hidden}
+.xw-vrow{
+  display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:16px;align-items:start;
+  padding:18px 20px;border-bottom:1px solid var(--xw-line);transition:.16s;
+}
+.xw-vrow:last-child{border-bottom:none}
+.xw-vrow:hover{background:#f2faf7}
+.xw-vrow__no{font-size:19px;font-weight:900;color:var(--xw-line);line-height:1.2;letter-spacing:-1px}
+.xw-vrow__no--hot{color:var(--xw-jade)}
+.xw-vrow h4{font-size:16px;font-weight:800;line-height:1.45}
+.xw-vrow h4 a:hover{color:var(--xw-jade-deep)}
+.xw-vrow p{font-size:13.5px;color:var(--xw-slate);margin:5px 0 9px}
+.xw-tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:9px}
+.xw-tag{
+  font-size:11.5px;color:var(--xw-jade-deep);background:#e6f6f1;border-radius:5px;padding:2px 8px;
+}
+.xw-tag--gray{color:var(--xw-slate);background:#eef2f4}
+.xw-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.xw-act{
+  font-size:12.5px;color:var(--xw-slate);border:1px solid var(--xw-line);border-radius:8px;
+  padding:4px 10px;display:inline-flex;align-items:center;gap:5px;transition:.15s;background:#fff;
+}
+.xw-act:hover{border-color:var(--xw-jade);color:var(--xw-jade-deep)}
+.xw-act.is-on{background:#e6f6f1;border-color:var(--xw-jade);color:var(--xw-jade-deep);font-weight:700}
+.xw-act.is-liked{background:#fdf0dc;border-color:var(--xw-amber);color:#96650a;font-weight:700}
+.xw-vrow__side{font-size:12.5px;color:var(--xw-slate);text-align:right;white-space:nowrap;padding-top:3px}
+.xw-vrow__side b{display:block;color:var(--xw-ink-2);font-size:13.5px}
+
+/* ============ 专题 ============ */
+.xw-topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.xw-topic{
+  background:#fff;border:1px solid var(--xw-line);border-radius:var(--xw-radius);
+  padding:20px;display:flex;flex-direction:column;gap:10px;transition:.2s;
+}
+.xw-topic:hover{border-color:var(--xw-jade);box-shadow:0 14px 34px rgba(24,195,154,.14);transform:translateY(-3px)}
+.xw-topic--wide{grid-column:span 2}
+.xw-topic__status{
+  font-size:11.5px;font-weight:700;border-radius:999px;padding:3px 11px;align-self:flex-start;
+  background:#e6f6f1;color:var(--xw-jade-deep);
+}
+.xw-topic__status--next{background:#fdf0dc;color:#96650a}
+.xw-topic h3{font-size:17px;font-weight:800;line-height:1.4}
+.xw-topic p{font-size:13.5px;color:var(--xw-slate)}
+.xw-topic ul{display:flex;flex-direction:column;gap:7px;margin-top:2px}
+.xw-topic li{font-size:13px;padding-left:16px;position:relative;color:var(--xw-ink-2)}
+.xw-topic li::before{
+  content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:2px;background:var(--xw-jade);
+}
+.xw-topic__cover{aspect-ratio:16/7;border-radius:10px;overflow:hidden;background:#132029}
+.xw-topic__cover img{width:100%;height:100%;object-fit:cover}
+
+/* ============ 作者：双列简介 ============ */
+.xw-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.xw-author{
+  display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;
+  background:#fff;border:1px solid var(--xw-line);border-radius:var(--xw-radius);padding:18px;transition:.18s;
+}
+.xw-author:hover{border-color:var(--xw-jade);transform:translateY(-2px);box-shadow:var(--xw-shadow)}
+.xw-avatar{
+  width:64px;height:64px;border-radius:16px;display:grid;place-items:center;
+  font-size:22px;font-weight:900;color:#fff;letter-spacing:-1px;
+}
+.xw-avatar--a{background:linear-gradient(140deg,#0e8f70,#18c39a)}
+.xw-avatar--b{background:linear-gradient(140deg,#b07a12,#f2b544);color:#2a1d02}
+.xw-avatar--c{background:linear-gradient(140deg,#2a4a63,#5d93b8)}
+.xw-avatar--d{background:linear-gradient(140deg,#5c3f74,#a479c4)}
+.xw-avatar--e{background:linear-gradient(140deg,#8f3b34,#d4705f)}
+.xw-author__name{font-size:15.5px;font-weight:800;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.xw-author__field{font-size:12px;color:var(--xw-jade-deep);background:#e6f6f1;border-radius:5px;padding:1px 8px;font-weight:700}
+.xw-author__nums{display:flex;gap:14px;font-size:12px;color:var(--xw-slate);margin:6px 0 8px;flex-wrap:wrap}
+.xw-author__nums b{color:var(--xw-ink-2)}
+.xw-author__bio{font-size:13px;color:var(--xw-slate);line-height:1.7}
+.xw-author__more{margin-top:9px}
+.xw-author__more button{font-size:12.5px;color:var(--xw-jade-deep);font-weight:700;border-bottom:1px dashed var(--xw-jade)}
+
+/* ============ 品牌解析（长文） ============ */
+.xw-essay{background:#fff;border:1px solid var(--xw-line);border-radius:var(--xw-radius);padding:32px 34px}
+.xw-essay h3{font-size:18px;font-weight:800;margin:24px 0 10px;padding-left:12px;border-left:4px solid var(--xw-jade);line-height:1.4}
+.xw-essay h3:first-child{margin-top:0}
+.xw-essay p{font-size:14.5px;color:var(--xw-ink-2);margin-bottom:12px;text-align:justify}
+.xw-essay b{color:var(--xw-jade-deep)}
+.xw-essay__split{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:26px}
+.xw-aside{
+  background:#f2faf7;border:1px solid #cdeade;border-radius:12px;padding:18px;
+  align-self:start;position:relative;
+}
+.xw-aside h4{font-size:14px;font-weight:800;margin-bottom:10px;color:var(--xw-jade-deep)}
+.xw-aside li{font-size:13px;color:var(--xw-ink-2);padding:6px 0;border-bottom:1px dashed #cdeade;display:flex;justify-content:space-between;gap:10px}
+.xw-aside li:last-child{border-bottom:none}
+.xw-aside li span{color:var(--xw-slate);font-size:12px;flex:0 0 auto}
+
+/* ============ 评分摘要 + 双列评价 ============ */
+.xw-rate{
+  display:grid;grid-template-columns:220px minmax(0,1fr);gap:26px;background:#fff;
+  border:1px solid var(--xw-line);border-radius:var(--xw-radius);padding:22px;margin-bottom:22px;align-items:center;
+}
+.xw-rate__score{text-align:center;border-right:1px solid var(--xw-line);padding-right:20px}
+.xw-rate__score strong{font-size:44px;font-weight:900;letter-spacing:-2px;color:var(--xw-ink);line-height:1}
+.xw-rate__score strong small{font-size:16px;color:var(--xw-slate);letter-spacing:0}
+.xw-rate__stars{color:var(--xw-amber);font-size:16px;letter-spacing:2px;margin:6px 0 4px}
+.xw-rate__score span{font-size:12px;color:var(--xw-slate)}
+.xw-rate__bars{display:flex;flex-direction:column;gap:7px}
+.xw-bar{display:grid;grid-template-columns:56px minmax(0,1fr) 42px;gap:10px;align-items:center;font-size:12px;color:var(--xw-slate)}
+.xw-bar__track{height:7px;border-radius:99px;background:#eef2f4;overflow:hidden}
+.xw-bar__fill{height:100%;border-radius:99px;background:linear-gradient(90deg,#18c39a,#0e8f70)}
+.xw-cmts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.xw-cmt{
+  background:#fff;border:1px solid var(--xw-line);border-radius:12px;padding:16px;transition:.16s;
+}
+.xw-cmt:hover{border-color:#bfe9dc;box-shadow:0 8px 20px rgba(24,195,154,.1)}
+.xw-cmt__top{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.xw-cmt__av{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:800;font-size:14px;flex:0 0 auto}
+.xw-cmt__who{font-size:13.5px;font-weight:800}
+.xw-cmt__who span{display:block;font-size:11.5px;color:var(--xw-slate);font-weight:400}
+.xw-cmt p{font-size:13.5px;color:var(--xw-ink-2);line-height:1.72}
+.xw-cmt__foot{margin-top:9px;font-size:11.5px;color:var(--xw-slate);display:flex;gap:12px;flex-wrap:wrap}
+
+/* ============ 合作墙 / 动态 / FAQ ============ */
+.xw-partners{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.xw-partner{
+  background:#fff;border:1px solid var(--xw-line);border-radius:12px;padding:18px 14px;text-align:center;transition:.18s;
+}
+.xw-partner:hover{border-color:var(--xw-jade);background:#f2faf7}
+.xw-partner__logo{width:42px;height:42px;margin:0 auto 9px;border-radius:11px;display:grid;place-items:center;font-weight:900;font-size:15px;color:#fff}
+.xw-partner b{font-size:13.5px;display:block}
+.xw-partner span{font-size:11.5px;color:var(--xw-slate)}
+
+.xw-news{display:flex;flex-direction:column;gap:12px}
+.xw-news__item{
+  display:grid;grid-template-columns:112px minmax(0,1fr);gap:18px;
+  background:#fff;border:1px solid var(--xw-line);border-radius:12px;padding:16px 18px;
+}
+.xw-news__date{font-size:12.5px;color:var(--xw-jade-deep);font-weight:800;letter-spacing:.5px}
+.xw-news__date span{display:block;color:var(--xw-slate);font-weight:400;font-size:11.5px;letter-spacing:0;margin-top:2px}
+.xw-news__item h4{font-size:15px;font-weight:800;margin-bottom:4px;line-height:1.45}
+.xw-news__item p{font-size:13px;color:var(--xw-slate)}
+
+.xw-faq{display:flex;flex-direction:column;gap:10px}
+.xw-faq details{
+  background:#fff;border:1px solid var(--xw-line);border-radius:12px;padding:0;overflow:hidden;
+}
+.xw-faq summary{
+  padding:14px 18px;font-size:14.5px;font-weight:700;display:flex;justify-content:space-between;
+  gap:14px;align-items:center;transition:.15s;
+}
+.xw-faq summary:hover{background:#f2faf7;color:var(--xw-jade-deep)}
+.xw-faq summary::after{
+  content:"+";font-size:19px;font-weight:400;color:var(--xw-jade);flex:0 0 auto;line-height:1;
+}
+.xw-faq details[open] summary::after{content:"−"}
+.xw-faq details[open] summary{background:#f2faf7;color:var(--xw-jade-deep)}
+.xw-faq__body{padding:0 18px 16px;font-size:13.5px;color:var(--xw-slate);line-height:1.8;border-top:1px dashed var(--xw-line);padding-top:13px;margin-top:0}
+
+/* ============ 投稿 / 联系 ============ */
+.xw-join{
+  background:linear-gradient(120deg,#0f1a22,#123a32 60%,#0e8f70);
+  color:#e9f7f2;border-radius:18px;padding:34px;display:grid;
+  grid-template-columns:minmax(0,1fr) 260px;gap:26px;align-items:center;
+}
+.xw-join h2{color:#fff;font-size:clamp(20px,2.3vw,26px);margin-bottom:10px}
+.xw-join p{font-size:14px;color:#b9e2d6;margin-bottom:16px}
+.xw-join__actions{display:flex;gap:12px;flex-wrap:wrap}
+.xw-join__box{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:16px}
+.xw-join__box b{display:block;font-size:13px;color:#fff;margin-bottom:5px}
+.xw-join__box span{font-size:12.5px;color:#b9e2d6;display:block;line-height:1.7}
+
+/* ============ 页脚 ============ */
+.xw-footer{background:#0f1a22;color:#a9bcc7;padding:48px 0 22px;margin-top:56px}
+.xw-footer__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;margin-bottom:32px}
+.xw-footer h5{color:#fff;font-size:14px;font-weight:800;margin-bottom:12px;letter-spacing:.5px}
+.xw-footer li{font-size:13px;padding:4px 0}
+.xw-footer li a:hover{color:var(--xw-jade)}
+.xw-footer__about p{font-size:13px;line-height:1.8;color:#8fa6b3}
+.xw-footer__brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.xw-footer__brand .xw-brand__name{color:#fff}
+.xw-footer__brand .xw-brand__sub{color:#7d949f}
+.xw-footer__bottom{
+  border-top:1px solid rgba(255,255,255,.1);padding-top:18px;display:flex;
+  justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#7d949f;
+}
+.xw-footer__bottom a:hover{color:var(--xw-jade)}
+
+/* ============ 回到顶部 & Toast & 弹窗 ============ */
+.xw-top{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:12px;
+  background:var(--xw-ink);color:#fff;display:grid;place-items:center;z-index:150;
+  box-shadow:0 10px 24px rgba(15,26,34,.28);opacity:0;pointer-events:none;transition:.24s;
+}
+.xw-top.is-show{opacity:1;pointer-events:auto}
+.xw-top:hover{background:var(--xw-jade-deep)}
+
+.xw-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);z-index:300;
+  background:rgba(15,26,34,.94);color:#fff;font-size:13.5px;padding:11px 20px;border-radius:10px;
+  opacity:0;pointer-events:none;transition:.24s;max-width:88vw;text-align:center;
+}
+.xw-toast.is-show{opacity:1;transform:translate(-50%,0)}
+
+.xw-modal{
+  position:fixed;inset:0;z-index:400;display:none;place-items:center;padding:20px;
+  background:rgba(15,26,34,.55);backdrop-filter:blur(3px);
+}
+.xw-modal.is-open{display:grid}
+.xw-modal__card{
+  background:#fff;border-radius:16px;max-width:520px;width:100%;padding:26px;
+  max-height:86vh;overflow:auto;box-shadow:0 24px 60px rgba(0,0,0,.3);
+}
+.xw-modal__card h3{font-size:19px;font-weight:800;margin-bottom:6px}
+.xw-modal__sub{font-size:13px;color:var(--xw-slate);margin-bottom:16px}
+.xw-field{margin-bottom:12px}
+.xw-field label{font-size:12.5px;font-weight:700;color:var(--xw-ink-2);display:block;margin-bottom:5px}
+.xw-field input,.xw-field textarea,.xw-field select{
+  width:100%;border:1px solid var(--xw-line);border-radius:9px;padding:9px 12px;
+  font-size:13.5px;font-family:inherit;outline:none;background:#fbfcfd;
+}
+.xw-field input:focus,.xw-field textarea:focus,.xw-field select:focus{border-color:var(--xw-jade);background:#fff}
+.xw-field textarea{min-height:86px;resize:vertical}
+.xw-modal__foot{display:flex;gap:10px;justify-content:flex-end;margin-top:6px}
+
+/* ============ 响应式 ============ */
+@media (max-width:1000px){
+  .xw-hero__grid{grid-template-columns:1fr;gap:26px}
+  .xw-focus{grid-template-columns:1fr}
+  .xw-topics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .xw-topic--wide{grid-column:span 2}
+  .xw-essay__split{grid-template-columns:1fr}
+  .xw-rate{grid-template-columns:1fr}
+  .xw-rate__score{border-right:none;border-bottom:1px solid var(--xw-line);padding:0 0 16px}
+  .xw-partners{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .xw-join{grid-template-columns:1fr}
+  .xw-footer__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:760px){
+  :root{--xw-head-h:104px}
+  .xw-burger{display:grid}
+  .xw-nav{
+    display:none;flex:1 1 100%;order:5;background:#fff;border:1px solid var(--xw-line);
+    border-radius:12px;padding:8px;gap:2px;
+  }
+  .xw-nav.is-open{display:flex;flex-direction:column}
+  .xw-nav a{padding:10px 12px}
+  .xw-search{order:4;flex:1 1 100%}
+  .xw-authors{grid-template-columns:1fr}
+  .xw-cmts{grid-template-columns:1fr}
+  .xw-topics{grid-template-columns:1fr}
+  .xw-topic--wide{grid-column:span 1}
+  .xw-vrow{grid-template-columns:30px minmax(0,1fr);gap:12px}
+  .xw-vrow__side{grid-column:2;text-align:left;display:flex;gap:12px;flex-wrap:wrap;padding-top:0}
+  .xw-vrow__side b{display:inline}
+  .xw-essay{padding:22px 18px}
+  .xw-hero__chip{left:0;bottom:12px;max-width:92%}
+  .xw-footer__grid{grid-template-columns:1fr;gap:22px}
+  .xw-news__item{grid-template-columns:1fr;gap:6px}
+  .xw-notice__inner{gap:8px}
+  .xw-stats{grid-template-columns:1fr 1fr 1fr;gap:8px}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<div class="xw-stickwrap">
+  <div class="xw-notice" role="region" aria-label="官方公告">
+    <div class="xw-notice__inner">
+      <span class="xw-notice__badge">官方发布</span>
+      <span class="xw-notice__text"><b>《直捣穴底·第二季》第 6 集「地下暗河的回声」</b>已上线，同步开放深度解说音轨与地质测绘手稿下载。</span>
+      <a class="xw-notice__link" href="#xw-videos">查看本期更新 →</a>
+    </div>
+  </div>
+
+  <header class="xw-header">
+    <div class="xw-header__inner">
+      <a class="xw-brand" href="#xw-top" aria-label="直捣穴底官方网站首页">
+        <span class="xw-brand__mark">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 48 L26 16 L38 36 L45 26 L56 48 Z" fill="#18c39a"/><circle cx="47" cy="16" r="5" fill="#f2b544"/></svg>
+        </span>
+        <span>
+          <span class="xw-brand__name">直捣穴底</span>
+          <span class="xw-brand__sub">CAVE DEPTH · 官方</span>
+        </span>
+      </a>
+
+      <nav class="xw-nav" id="xw-nav" aria-label="主导航">
+        <a href="#xw-top" class="is-active">首页</a>
+        <a href="#xw-focus">焦点</a>
+        <a href="#xw-videos">影像</a>
+        <a href="#xw-topics">专题</a>
+        <a href="#xw-authors">创作者</a>
+        <a href="#xw-essay">品牌解析</a>
+        <a href="#xw-reviews">口碑</a>
+        <a href="#xw-faq">帮助</a>
+      </nav>
+
+      <div class="xw-search">
+        <input id="xw-search-input" type="search" placeholder="搜索洞穴、地质或创作者" aria-label="站内搜索">
+        <button id="xw-search-btn" type="button">搜索</button>
+        <div class="xw-search__hint" id="xw-search-hint" aria-live="polite"></div>
+      </div>
+
+      <button class="xw-burger" id="xw-burger" type="button" aria-label="展开导航" aria-expanded="false" aria-controls="xw-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+</div>
+
+<main id="xw-top">
+
+  <!-- ===== S2 品牌首屏 ===== -->
+  <section class="xw-hero">
+    <div class="xw-wrap">
+      <div class="xw-hero__grid">
+        <div>
+          <span class="xw-hero__tag">官方网站 · 原创正版高清播放</span>
+          <h1>直捣穴底<span>洞穴纪实影像官方平台</span></h1>
+          <p class="xw-hero__intro">
+            作为深耕洞穴探险与地质纪实垂直领域的视频品牌，直捣穴底官方网站以“直捣穴底”为内容准则，为探险者、地质研究者与影像创作者搭建高品质内容生态。我们把镜头送进溶洞、竖井、暗河与人工坑道，记录那些不被看见的地下中国。
+          </p>
+          <div class="xw-hero__actions">
+            <a class="xw-btn xw-btn--solid" href="#xw-videos">进入高清播放</a>
+            <a class="xw-btn xw-btn--ghost" href="#xw-topics">浏览专题企划</a>
+            <button class="xw-btn xw-btn--amber" type="button" data-xw-open="join">我要投稿</button>
+          </div>
+          <div class="xw-stats">
+            <div>
+              <div class="xw-stats__num" data-xw-count="2860">2,860<small>部</small></div>
+              <div class="xw-stats__label">原创正版洞穴影像</div>
+            </div>
+            <div>
+              <div class="xw-stats__num" data-xw-count="164">164<small>位</small></div>
+              <div class="xw-stats__label">签约创作者与地质顾问</div>
+            </div>
+            <div>
+              <div class="xw-stats__num" data-xw-count="9120">9,120<small>万</small></div>
+              <div class="xw-stats__label">累计高清播放次数</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="xw-hero__visual">
+          <div class="xw-hero__frame">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 630'%3E%3Cdefs%3E%3ClinearGradient id='h1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23304a5a'/%3E%3Cstop offset='0.55' stop-color='%23132229'/%3E%3Cstop offset='1' stop-color='%230a1218'/%3E%3C/linearGradient%3E%3CradialGradient id='h2' cx='0.5' cy='0.9' r='0.6'%3E%3Cstop offset='0' stop-color='%2318c39a' stop-opacity='0.55'/%3E%3Cstop offset='1' stop-color='%2318c39a' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='800' height='630' fill='url(%23h1)'/%3E%3Cellipse cx='400' cy='600' rx='360' ry='180' fill='url(%23h2)'/%3E%3Cpath d='M0 90 Q120 40 230 110 T470 96 T700 70 L800 96 L800 0 L0 0 Z' fill='%23233946'/%3E%3Cpath d='M0 150 Q140 220 260 160 T520 190 T800 140 L800 0 L0 0 Z' fill='%23182b36' opacity='0.9'/%3E%3Cpath d='M60 630 L120 300 Q190 240 260 300 L340 630 Z' fill='%230d1a21'/%3E%3Cpath d='M470 630 L540 250 Q620 200 700 280 L760 630 Z' fill='%230d1a21'/%3E%3Cpath d='M200 630 L300 470 L390 560 L500 430 L620 630 Z' fill='%230f2029'/%3E%3Cpath d='M330 470 L380 430 L410 470 L370 520 Z' fill='%23f2b544' opacity='0.85'/%3E%3Ccircle cx='392' cy='452' r='7' fill='%23fff5d6'/%3E%3Cpath d='M392 452 L250 620 L170 620 Z' fill='%23f2b544' opacity='0.12'/%3E%3Cpath d='M392 452 L560 630 L660 630 Z' fill='%23f2b544' opacity='0.08'/%3E%3Cg stroke='%2318c39a' stroke-width='1.5' opacity='0.4' fill='none'%3E%3Cpath d='M120 300 Q160 270 200 300'/%3E%3Cpath d='M540 250 Q580 230 620 260'/%3E%3Cpath d='M260 420 Q300 400 340 425'/%3E%3C/g%3E%3Cg fill='%23ffffff' opacity='0.5'%3E%3Ccircle cx='150' cy='180' r='1.6'/%3E%3Ccircle cx='620' cy='150' r='1.4'/%3E%3Ccircle cx='700' cy='230' r='1.8'/%3E%3Ccircle cx='90' cy='250' r='1.2'/%3E%3C/g%3E%3C/svg%3E" alt="洞穴竖井中探照灯光柱照亮岩壁与暗河的大型主视觉" width="800" height="630">
+          </div>
+          <div class="xw-hero__chip">
+            <span class="xw-dot">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2 L13 8 L4 14 Z" fill="#fff"/></svg>
+            </span>
+            <span>
+              <b>正在热播：暗河回声 4K 修复版</b>
+              <span>时长 42 分 · 地质解说双音轨</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== S3 焦点内容 ===== -->
+  <section class="xw-section" id="xw-focus">
+    <div class="xw-wrap">
+      <span class="xw-eyebrow">焦点推荐</span>
+      <h2 class="xw-h2">把镜头<em>直捣穴底</em>，本期三部必看</h2>
+      <p class="xw-lead">由官方编辑部与地质顾问团联合评选，兼顾影像完成度、科学信息密度与现场安全记录，均为原创正版高清内容。</p>
+
+      <div class="xw-focus">
+        <article class="xw-focus__main">
+          <div class="xw-focus__cover">
+            <span class="xw-badge xw-badge--jade">本周焦点</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 540'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231b3f4a'/%3E%3Cstop offset='1' stop-color='%230a1419'/%3E%3C/linearGradient%3E%3ClinearGradient id='f2' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%2318c39a' stop-opacity='0.7'/%3E%3Cstop offset='1' stop-color='%2318c39a' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='960' height='540' fill='url(%23f1)'/%3E%3Cpath d='M0 360 Q160 300 340 340 T700 320 T960 350 L960 540 L0 540 Z' fill='%2312252d'/%3E%3Cpath d='M0 400 Q220 360 420 400 T960 390 L960 540 L0 540 Z' fill='%230f1f26'/%3E%3Cpath d='M120 540 L240 250 Q300 210 360 250 L470 540 Z' fill='%230b171d'/%3E%3Cpath d='M600 540 L700 290 Q760 250 820 290 L900 540 Z' fill='%230b171d'/%3E%3Cpath d='M380 300 Q480 270 580 305' stroke='%2318c39a' stroke-width='3' fill='none' opacity='0.75'/%3E%3Crect x='0' y='330' width='960' height='10' fill='url(%23f2)' opacity='0.5'/%3E%3Cg fill='%23f2b544'%3E%3Ccircle cx='470' cy='260' r='8'/%3E%3Ccircle cx='470' cy='260' r='22' opacity='0.18'/%3E%3C/g%3E%3Cg stroke='%235d93b8' stroke-width='1.2' opacity='0.35' fill='none'%3E%3Cpath d='M240 250 Q300 220 360 250'/%3E%3Cpath d='M700 290 Q760 260 820 290'/%3E%3C/g%3E%3C/svg%3E" alt="暗河回声航拍：探照灯照亮的溶洞暗河与石笋群" width="960" height="540">
+          </div>
+          <div class="xw-focus__body">
+            <h3 class="xw-h3">《直捣穴底·第二季 06》地下暗河的回声</h3>
+            <p>摄制组在黔北一处未公开标注的溶洞系统内连续驻留 11 天，用 4 台低照度机位记录暗河涨落，并首次同步收录洞穴水流声场。影片中段的水位曲线由随队地质顾问现场标注，画面与数据一一对应。</p>
+            <div class="xw-meta">
+              <span>作者 <b>岩层笔记</b></span>
+              <span>播放 <b>128.4 万</b></span>
+              <span>点赞 <b>9,342</b></span>
+              <span>收藏 <b>4,118</b></span>
+              <span>时长 <b>42:16</b></span>
+            </div>
+            <div class="xw-actions" style="margin-top:14px">
+              <button class="xw-act" type="button" data-xw-like>点赞</button>
+              <button class="xw-act" type="button" data-xw-save>收藏</button>
+              <button class="xw-act" type="button" data-xw-copy>复制链接</button>
+              <a class="xw-btn xw-btn--solid xw-btn--sm" href="#xw-videos">高清播放</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="xw-focus__list">
+          <article class="xw-mini">
+            <div class="xw-mini__thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%232e2a22'/%3E%3Ccircle cx='240' cy='60' r='34' fill='%23f2b544' opacity='0.35'/%3E%3Cpath d='M0 200 L70 120 L140 180 L210 110 L320 210 L320 240 L0 240 Z' fill='%231b1a15'/%3E%3Cpath d='M60 240 L110 160 L160 210 L200 170 L250 240 Z' fill='%230e0e0a'/%3E%3C/g%3E%3C/svg%3E" alt="人工坑道头灯与旧矿车轨道的测绘图" width="320" height="240">
+            </div>
+            <div>
+              <h4>废弃坑道里的 300 米：人工洞穴测绘实录</h4>
+              <p>一次没有水的探洞，重点是支护结构与历史痕迹，附完整测绘图说明。</p>
+              <div class="xw-meta" style="font-size:11.5px;margin-top:5px"><span>播放 46.2 万</span><span>点赞 3,180</span></div>
+            </div>
+          </article>
+
+          <article class="xw-mini">
+            <div class="xw-mini__thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%230f2a26'/%3E%3Cg fill='%2334b898' opacity='0.75'%3E%3Ccircle cx='80' cy='150' r='10'/%3E%3Ccircle cx='140' cy='120' r='16'/%3E%3Ccircle cx='200' cy='160' r='8'/%3E%3Ccircle cx='250' cy='110' r='13'/%3E%3C/g%3E%3Cpath d='M0 190 Q80 170 160 195 T320 185 L320 240 L0 240 Z' fill='%23071a17'/%3E%3C/g%3E%3C/svg%3E" alt="洞穴滴水与钟乳石生长的微距画面" width="320" height="240">
+            </div>
+            <div>
+              <h4>一滴水要多久：钟乳石生长的微观时间</h4>
+              <p>微距摄影与年轮式切片对照，解释为什么洞穴里的“慢”值得等待。</p>
+              <div class="xw-meta" style="font-size:11.5px;margin-top:5px"><span>播放 38.7 万</span><span>点赞 2,764</span></div>
+            </div>
+          </article>
+
+          <article class="xw-mini">
+            <div class="xw-mini__thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%23202a3a'/%3E%3Cpath d='M40 240 L70 90 L110 90 L140 240 Z' fill='%23131820'/%3E%3Crect x='150' y='60' width='120' height='14' rx='4' fill='%235d93b8' opacity='0.7'/%3E%3Crect x='150' y='86' width='90' height='10' rx='4' fill='%235d93b8' opacity='0.4'/%3E%3Ccircle cx='230' cy='160' r='26' fill='none' stroke='%23f2b544' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E" alt="洞穴影像安全装备清单与头盔照明示意" width="320" height="240">
+            </div>
+            <div>
+              <h4>探洞安全装备清单：我们为何坚持这套标准</h4>
+              <p>从三光源冗余到通讯中继，官方安全规范执行清单首次公开。</p>
+              <div class="xw-meta" style="font-size:11.5px;margin-top:5px"><span>播放 62.9 万</span><span>点赞 5,102</span></div>
+            </div>
+          </article>
+
+          <article class="xw-mini">
+            <div class="xw-mini__thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%233a2c1e'/%3E%3Cpath d='M0 170 Q100 140 180 168 T320 158 L320 240 L0 240 Z' fill='%23241a10'/%3E%3Cg stroke='%23f2b544' stroke-width='2' opacity='0.6' fill='none'%3E%3Cpath d='M60 120 Q100 90 140 120'/%3E%3Cpath d='M170 100 Q210 74 250 104'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E" alt="洞穴沉积物样本与地质记录本特写" width="320" height="240">
+            </div>
+            <div>
+              <h4>样本不出洞：我们的地质取样伦理约定</h4>
+              <p>为什么直捣穴底只拍不拿？一份创作者必须签署的六条约定。</p>
+              <div class="xw-meta" style="font-size:11.5px;margin-top:5px"><span>播放 21.5 万</span><span>点赞 1,908</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== M3 热门视频流（文字列表） ===== -->
+  <section class="xw-section xw-section--alt" id="xw-videos">
+    <div class="xw-wrap">
+      <span class="xw-eyebrow">影像库 · 高清播放</span>
+      <h2 class="xw-h2">本周<em>热门视频流</em>：从竖井到暗河</h2>
+      <p class="xw-lead">所有条目均为官方发布或创作者授权内容，支持点赞、收藏与链接分享。四条以上内容以文字列表呈现，方便快速检索与对比数据。</p>
+
+      <div class="xw-vlist" id="xw-video-list">
+
+        <article class="xw-vrow">
+          <div class="xw-vrow__no xw-vrow__no--hot">01</div>
+          <div>
+            <h4><a href="#xw-videos">直捣穴底：九十米竖井的第一视角下降</a></h4>
+            <p>三段绳降、两次换点，全程一镜到底。画面保留了下降器摩擦声与呼吸节奏，后期仅做降噪与亮度补偿，是入门观众理解洞穴尺度的直观样本。</p>
+            <div class="xw-tags"><span class="xw-tag">单绳技术</span><span class="xw-tag">第一视角</span><span class="xw-tag xw-tag--gray">原创</span></div>
+            <div class="xw-actions">
+              <button class="xw-act" type="button" data-xw-like>点赞 <b>8,214</b></button>
+              <button class="xw-act" type="button" data-xw-save>收藏</button>
+              <button class="xw-act" type="button" data-xw-copy>复制链接</button>
+            </div>
+          </div>
+          <div class="xw-vrow__side"><b>岩层笔记</b>播放 96.3 万</div>
+        </article>
+
+        <article class="xw-vrow">
+          <div class="xw-vrow__no xw-vrow__no--hot">02</div>
+          <div>
+            <h4><a href="#xw-videos">暗河涨水的六个小时：水位曲线现场记录</a></h4>
+            <p>把摄像机架在岩台上，让数据自己说话。片中每 20 分钟出现一次水位刻度与水声变化提示，适合作为地质教学片段单独引用。</p>
+            <div class="xw-tags"><span class="xw-tag">水文观察</span><span class="xw-tag">现场记录</span><span class="xw-tag xw-tag--gray">科普</span></div>
+            <div class="xw-actions">
+              <button class="xw-act" type="button" data-xw-like>点赞 <b>6,077</b></button>
+              <button class="xw-act" type="button" data-xw-save>收藏</button>
+              <button class="xw-act" type="button" data-xw-copy>复制链接</button>
+            </div>
+          </div>
+          <div class="xw-vrow__side"><b>暗河档案室</b>播放 74.8 万</div>
+        </article>
+
+        <article class="xw-vrow">
+          <div class="xw-vrow__no xw-vrow__no--hot">03</div>
+          <div>
+            <h4><a href="#xw-videos">洞穴生物的十分钟：盲鱼、马陆与蝙蝠群</a></h4>
+            <p>使用冷光源与长焦远距离拍摄，不惊扰任何个体。创作者在片尾说明了拍摄距离、光源强度与退出路线，这也是我们推荐给新作者的拍摄范例。</p>
+            <div class="xw-tags"><span class="xw-tag">洞穴生物</span><span class="xw-tag">无干扰拍摄</span><span class="xw-tag xw-tag--gray">精品内容</span></div>
+            <div class="xw-actions">
+              <button class="xw-act" type="button" data-xw-like>点赞 <b>5,436</b></button>
+              <button class="xw-act" type="button" data-xw-save>收藏</button>
+              <button class="xw-act" type="button" data-xw-copy>复制链接</button>
+            </div>
+          </div>
+          <div class="xw-vrow__side"><b>石缝观察员</b>播放 61.2 万</div>
+        </article>
+
+        <article class="xw-vrow">
+          <div class="xw-vrow__no">04</div>
+          <div>
+            <h4><a href="#xw-videos">从洞外到洞内：一条溪流如何切开石灰岩</a></h4>
+            <p>航拍接洞内轨道，讲清喀斯特地貌的时间线。制作团队补充了 3 组示意动画，适合亲子家庭共同观看，也是官方科普合集的第一集。</p>
+            <div class="xw-tags"><span class="xw-tag">喀斯特</span><span class="xw-tag">动画示意</span><span class="xw-tag xw-tag--gray">知识科普</span></div>
+            <div class="xw-actions">
+              <button class="xw-act" type="button" data-xw-like>点赞 <b>4,890</b></button>
+              <button class="xw-act" type="button" data-xw-save>收藏</button>
+              <button class="xw-act" type="button" data-xw-copy>复制链接</button>
+            </div>
+          </div>
+          <div class="xw-vrow__side"><b>地层讲台</b>播放 58.6 万</div>
+        </article>
+
+        <article class="xw-vrow">
+          <div class="xw-vrow__no">05</div>
+          <div>
+            <h4><a href="#xw-videos">剪辑室里的一夜：暗河回声的声音设计</a></h4>
+            <p>把现场收音、水声素材与解说词轨逐层拆开，展示一条 42 分钟片子的后期结构。适合想进入纪实影像行业的年轻创作者参考。</p>
+            <div class="xw-tags"><span class="xw-tag">创作幕后</span><span class="xw-tag">声音设计</span><span class="xw-tag xw-tag--gray">行业观察</span></div>
+            <div class="xw-actions">
+              <button class="xw-act" type="button" data-xw-like>点赞 <b>3,742</b></button>
+              <button class="xw-act" type="button" data-xw-save>收藏</button>
+              <button class="xw-act" type="button" data-xw-copy>复制链接</button>
+            </div>
+          </div>
+          <div class="xw-vrow__side"><b>后期工坊</b>播放 44.9 万</div>
+        </article>
+
+        <article class="xw-vrow">
+          <div class="xw-vrow__no">06</div>
+          <div>
+            <h4><a href="#xw-videos">带父母看洞：一次低强度洞穴参观的完整记录</a></h4>
+            <p>不追求深度与难度，只记录一家人在成熟洞段的参观动线、休息点与讲解节奏。这条片子让我们收到最多家庭观众的留言。</p>
+            <div class="xw-tags"><span class="xw-tag">家庭友好</span><span class="xw-tag">参观攻略</span><span class="xw-tag xw-tag--gray">温暖陪伴</span></div>
+            <div class="xw-actions">
+              <button class="xw-act" type="button" data-xw-like>点赞 <b>3,290</b></button>
+              <button class="xw-act" type="button" data-xw-save>收藏</button>
+              <button class="xw-act" type="button" data-xw-copy>复制链接</button>
+            </div>
+          </div>
+          <div class="xw-vrow__side"><b>慢速出发</b>播放 39.1 万</div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== M4 专题企划 ===== -->
+  <section class="xw-section" id="xw-topics">
+    <div class="xw-wrap">
+      <span class="xw-eyebrow">专题企划</span>
+      <h2 class="xw-h2">四个持续更新的<em>洞穴专题</em></h2>
+      <p class="xw-lead">专题是直捣穴底内容生态的骨架：一个方向、一条时间线、一批创作者。每个专题下方列出最近三条更新，方便长期追更。</p>
+
+      <div class="xw-topics">
+
+        <article class="xw-topic xw-topic--wide">
+          <span class="xw-topic__status">更新中 · 已上线 12 集</span>
+          <div class="xw-topic__cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 420'%3E%3Cdefs%3E%3ClinearGradient id='t1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23122b33'/%3E%3Cstop offset='1' stop-color='%23070f13'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='960' height='420' fill='url(%23t1)'/%3E%3Cpath d='M0 300 Q180 240 360 290 T720 270 T960 300 L960 420 L0 420 Z' fill='%230c1a20'/%3E%3Cg stroke='%2318c39a' stroke-width='2' fill='none' opacity='0.65'%3E%3Cpath d='M120 120 L200 180 L160 250'/%3E%3Cpath d='M420 90 L500 160 L460 240'/%3E%3Cpath d='M700 110 L790 180 L740 260'/%3E%3C/g%3E%3Cg fill='%23f2b544'%3E%3Ccircle cx='200' cy='180' r='6'/%3E%3Ccircle cx='500' cy='160' r='6'/%3E%3Ccircle cx='790' cy='180' r='6'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E" alt="暗河档案专题主图：三条支流汇聚的地下河网络示意" width="960" height="420">
+          </div>
+          <h3>暗河档案：中国地下河影像调查</h3>
+          <p>以水文数据为线索，逐条梳理被记录的暗河系统。我们不公开精确坐标，但公开完整的观察方法与影像日志，让研究者和观众都能受益。</p>
+          <ul>
+            <li>第 12 集｜暗河回声：水位曲线与声场同步记录</li>
+            <li>第 11 集｜支流识别：三种常见的洞内水流形态</li>
+            <li>第 10 集｜雨季返场：同一洞段的两季对照</li>
+          </ul>
+        </article>
+
+        <article class="xw-topic">
+          <span class="xw-topic__status">长期企划</span>
+          <h3>竖井课堂：单绳技术入门十讲</h3>
+          <p>与专业救援教练联合制作，只讲规范，不讲炫技。每一讲都配装备清单与常见错误对照表。</p>
+          <ul>
+            <li>第九讲｜下降中的意外制动</li>
+            <li>第八讲｜绳索保护与磨点判断</li>
+            <li>第七讲｜上升器的正确发力</li>
+          </ul>
+        </article>
+
+        <article class="xw-topic">
+          <span class="xw-topic__status xw-topic__status--next">下月上线</span>
+          <h3>无光世界：洞穴生物观察计划</h3>
+          <p>聚焦洞穴生态的脆弱性，强调观察伦理：不投喂、不捕捉、不使用强光直射。</p>
+          <ul>
+            <li>预告｜盲鱼种群的十年观察起点</li>
+            <li>预告｜蝙蝠群出洞时间的季节差异</li>
+            <li>预告｜洞内微生物采样替代方案</li>
+          </ul>
+        </article>
+
+        <article class="xw-topic">
+          <span class="xw-topic__status">已完结 · 8 集</span>
+          <h3>镜头里的人：探洞者的真实日常</h3>
+          <p>八位普通探洞者的访谈记录，有恐惧、有分歧，也有长期主义。这组片子在社区里引发了最多关于“为什么下洞”的讨论。</p>
+          <ul>
+            <li>第八集｜一名测绘员的十年</li>
+            <li>第七集｜救援队员的两套背包</li>
+            <li>第六集｜摄影师的备用灯清单</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== M5 创作者矩阵 ===== -->
+  <section class="xw-section xw-section--alt" id="xw-authors">
+    <div class="xw-wrap">
+      <span class="xw-eyebrow">创作者</span>
+      <h2 class="xw-h2">与我们同行的<em>洞底创作者</em></h2>
+      <p class="xw-lead">直捣穴底坚持创作者署名制与稿酬制，所有作者均通过官方安全与伦理培训。以下五位为当期重点推荐，点击可查看作者档案。</p>
+
+      <div class="xw-authors">
+
+        <article class="xw-author">
+          <div class="xw-avatar xw-avatar--a">岩</div>
+          <div>
+            <div class="xw-author__name">岩层笔记 <span class="xw-author__field">竖井与测绘</span></div>
+            <div class="xw-author__nums"><span>作品 <b>128</b></span><span>粉丝 <b>46.8 万</b></span></div>
+            <p class="xw-author__bio">地质学背景出身，做了八年洞穴测绘。擅长把枯燥的剖面图讲成人能听懂的故事，镜头稳、语速慢，被观众称作“最让人安心的下洞声音”。</p>
+            <div class="xw-author__more"><button type="button" data-xw-open="author" data-xw-author="岩层笔记">查看作者档案</button></div>
+          </div>
+        </article>
+
+        <article class="xw-author">
+          <div class="xw-avatar xw-avatar--b">暗</div>
+          <div>
+            <div class="xw-author__name">暗河档案室 <span class="xw-author__field">水文记录</span></div>
+            <div class="xw-author__nums"><span>作品 <b>86</b></span><span>粉丝 <b>31.2 万</b></span></div>
+            <p class="xw-author__bio">一支两人的声音记录小组，专门收录洞穴水声与空腔混响。他们的片子里很少出现人脸，却能让观众闭眼就“听”到地下河的位置。</p>
+            <div class="xw-author__more"><button type="button" data-xw-open="author" data-xw-author="暗河档案室">查看作者档案</button></div>
+          </div>
+        </article>
+
+        <article class="xw-author">
+          <div class="xw-avatar xw-avatar--c">石</div>
+          <div>
+            <div class="xw-author__name">石缝观察员 <span class="xw-author__field">洞穴生物</span></div>
+            <div class="xw-author__nums"><span>作品 <b>64</b></span><span>粉丝 <b>22.6 万</b></span></div>
+            <p class="xw-author__bio">自然观察爱好者，长期跟拍洞内节肢动物与盲鱼。坚持长焦远距离与冷光源原则，片尾永远附一份“本次拍摄对生态的影响说明”。</p>
+            <div class="xw-author__more"><button type="button" data-xw-open="author" data-xw-author="石缝观察员">查看作者档案</button></div>
+          </div>
+        </article>
+
+        <article class="xw-author">
+          <div class="xw-avatar xw-avatar--d">慢</div>
+          <div>
+            <div class="xw-author__name">慢速出发 <span class="xw-author__field">家庭与轻探险</span></div>
+            <div class="xw-author__nums"><span>作品 <b>52</b></span><span>粉丝 <b>18.9 万</b></span></div>
+            <p class="xw-author__bio">前媒体编辑，现在带着孩子做低强度户外记录。她相信探险不等于冒险，最擅长把成熟洞段拍成普通人也能走的周末路线。</p>
+            <div class="xw-author__more"><button type="button" data-xw-open="author" data-xw-author="慢速出发">查看作者档案</button></div>
+          </div>
+        </article>
+
+        <article class="xw-author">
+          <div class="xw-avatar xw-avatar--e">后</div>
+          <div>
+            <div class="xw-author__name">后期工坊 <span class="xw-author__field">声音与剪辑</span></div>
+            <div class="xw-author__nums"><span>作品 <b>73</b></span><span>粉丝 <b>15.4 万</b></span></div>
+            <p class="xw-author__bio">负责多部官方专题的后期统筹。愿意把工作流公开，从素材命名到音轨分层，一条条讲清楚，是很多新人创作者的入门导师。</p>
+            <div class="xw-author__more"><button type="button" data-xw-open="author" data-xw-author="后期工坊">查看作者档案</button></div>
+          </div>
+        </article>
+
+        <article class="xw-author">
+          <div class="xw-avatar xw-avatar--a">地</div>
+          <div>
+            <div class="xw-author__name">地层讲台 <span class="xw-author__field">地质科普</span></div>
+            <div class="xw-author__nums"><span>作品 <b>95</b></span><span>粉丝 <b>27.3 万</b></span></div>
+            <p class="xw-author__bio">高校教师兼职科普作者，擅长用动画与实景叠合解释喀斯特成因。她的内容被多所学校引入课堂，也让不少家长第一次陪孩子看完了整期。</p>
+            <div class="xw-author__more"><button type="button" data-xw-open="author" data-xw-author="地层讲台">查看作者档案</button></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== M15 品牌解析长文 ===== -->
+  <section class="xw-section" id="xw-essay">
+    <div class="xw-wrap">
+      <span class="xw-eyebrow">品牌解析</span>
+      <h2 class="xw-h2">为什么是<em>直捣穴底</em>：一个视频品牌的方法论</h2>
+      <p class="xw-lead">这一段超过八百字，写给第一次打开官网的观众，也写给准备投稿的创作者。我们把规则写清楚，因为长期的信任比一次播放量重要。</p>
+
+      <div class="xw-essay">
+        <div class="xw-essay__split">
+          <div>
+            <h3>从一部片子到一套标准</h3>
+            <p>直捣穴底最早只是一支四人小队在周末的随手记录。第一次下竖井时，我们用家用相机拍了四十分钟，画面抖得几乎无法观看，但那段影像让我们意识到一件事：<b>洞穴影像最难的不是“拍到”，而是“拍对”</b>。光照不足会把岩层纹理压成一片死黑，解说词写得太满会盖掉环境声，镜头追着人跑就丢失了空间尺度。于是我们开始反向拆解：先定安全规范，再定拍摄规范，最后才谈叙事。今天官网上的每一部高清成片，都对应一份拍摄日志、一份装备清单与一份退出预案。观众看见的是 42 分钟的成片，看不见的是 11 天的驻留、四次水位上涨的撤离和三种光源的反复比对。</p>
+            <p>这套标准后来变成品牌的核心资产。我们把它拆成可执行的条目：进洞前必须完成路线申报与天气复核；洞内必须保证三光源冗余；拍摄生物必须使用冷光源并保持距离；任何沉积物与生物样本一律不带走；涉及未公开洞段的内容只发布影像与方法，不发布坐标。这不是为了神秘，而是为了让更多洞穴能以原状留给下一位研究者和下一代观众。<b>专业</b>在洞穴题材里从来不是形容词，而是一连串可以被检查的动作。</p>
+
+            <h3>内容生态：官方、创作者与研究者三方共处</h3>
+            <p>直捣穴底把自己定义为<b>平台</b>，而不是唯一的声音。官网首页能看到三种明显不同的内容气质：官方专题负责长周期、强结构的深度影像；签约创作者负责更个人化、更轻量的现场记录；地质顾问与研究者则提供注释、勘误与数据复核。三者之间不是上下游关系，而是互相校验。创作者拍到一段反常的水流，可以提交给顾问团；研究者给出的一种解释，也会反过来成为下一集专题的叙事起点。我们为这种协作设置了两条硬规则：第一，所有科学表述必须能追溯到至少一个可公开的来源或现场记录；第二，允许出错，但必须在页面显著位置标注勘误时间与修改内容。</p>
+            <p>这种机制让<b>原创</b>有了具体的含义。它不是“别人没拍过”，而是“我们提供了可验证的新信息”。一条竖井下降的第一视角，如果只是在炫技，价值有限；但如果同时标注了绳长、换点位置、岩壁磨点与下降用时，它就变成了一份可以被人复用的经验。官网的高清播放页因此配套了章节标记与数据面板，观众可以只看某个技术动作，也可以完整看完。这也是我们坚持正版、坚持署名、坚持稿酬的原因：<b>内容生态的健康，靠的是创作者能靠内容活下去</b>。</p>
+
+            <h3>社区与口碑：让评论也成为内容的一部分</h3>
+            <p>洞穴题材的观众有一个特点：他们 seldom 只是“看个热闹”。有人在评论区补充当地的水文记忆，有人指出解说里一处地层年代的口误，也有人只是写下“我爸以前在矿上，也讲过类似的声音”。这些留言我们不做清洗，只在必要时标注事实性勘误。评价区里既有对画面完成度的高度肯定，也有对节奏偏慢、信息密度过高、字幕过小的具体批评。<b>口碑</b>不是靠删差评建立的，而是靠长期一致的判断标准。我们更愿意让新观众在点开第一支片子之前，就能从评价区读到真实的分歧。</p>
+            <p>社区活力还体现在投稿与共创上。官网常年开放投稿入口，每月设置一个明确的征集方向，例如“雨季洞段对照”“低强度家庭路线”“洞穴声音素材”。投稿通过初审后会进入官方培训，内容包括安全、伦理、拍摄与版权四部分。我们不追求投稿数量，更在意每一位新作者是否理解“为什么不能带走那块石头”。当一位创作者第一次在片尾主动写上“本次拍摄未采集任何样本”，那比任何数据都更能说明这个社区在成长。</p>
+
+            <h3>技术、审美与社会责任</h3>
+            <p>在技术层面，官网全面适配移动端与桌面端，长文与视频条目都采用可读性优先的排版；在审美层面，我们刻意避免把洞穴拍成恐怖片，也避免过度调色造成对地貌的误读，画面尽量保留真实的色温与粗糙质感。在社会责任层面，直捣穴底与多家地方机构合作，参与洞穴环境监测与废弃物清理，并将部分专题的收益用于洞穴保护培训。我们相信，一个声称<b>值得信赖</b>的影像品牌，必须把保护写进商业模型，而不是只写在简介里。</p>
+            <p>未来一年，官网会持续更新暗河档案、竖井课堂与无光世界三个专题，同时开放更多创作者席位。如果你也相信“慢一点、准一点、轻一点”，欢迎从下方的投稿入口开始。我们不承诺流量，但承诺一次认真的审阅与一份清晰的规则。</p>
+          </div>
+
+          <aside class="xw-aside">
+            <h4>品牌关键词速览</h4>
+            <ul>
+              <li>官方网站 <span>持续运营</span></li>
+              <li>原创正版 <span>2,860 部</span></li>
+              <li>高清播放 <span>4K / 50fps</span></li>
+              <li>垂直领域 <span>洞穴纪实</span></li>
+              <li>创作者签约 <span>164 位</span></li>
+              <li>安全培训 <span>每人必修</span></li>
+              <li>内容勘误 <span>7 日内公示</span></li>
+              <li>公益合作 <span>9 家机构</span></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== M14 + M8 数据榜单与评价 ===== -->
+  <section class="xw-section xw-section--alt" id="xw-reviews">
+    <div class="xw-wrap">
+      <span class="xw-eyebrow">口碑与榜单</span>
+      <h2 class="xw-h2">观众怎么说，以及<em>数据榜单</em></h2>
+      <p class="xw-lead">评分摘要来自近三十天有效观看后的匿名评价，榜单综合播放、完播与互动质量，不单纯看流量。</p>
+
+      <div class="xw-rate">
+        <div class="xw-rate__score">
+          <strong>4.8<small> / 5</small></strong>
+          <div class="xw-rate__stars">★★★★★</div>
+          <span>基于 12,486 条有效评价</span>
+        </div>
+        <div class="xw-rate__bars">
+          <div class="xw-bar"><span>画面</span><span class="xw-bar__track"><span class="xw-bar__fill" style="width:96%"></span></span><span>96%</span></div>
+          <div class="xw-bar"><span>科普</span><span class="xw-bar__track"><span class="xw-bar__fill" style="width:93%"></span></span><span>93%</span></div>
+          <div class="xw-bar"><span>安全</span><span class="xw-bar__track"><span class="xw-bar__fill" style="width:98%"></span></span><span>98%</span></div>
+          <div class="xw-bar"><span>叙事</span><span class="xw-bar__track"><span class="xw-bar__fill" style="width:88%"></span></span><span>88%</span></div>
+          <div class="xw-bar"><span>推荐</span><span class="xw-bar__track"><span class="xw-bar__fill" style="width:95%"></span></span><span>95%</span></div>
+        </div>
+      </div>
+
+      <div class="xw-cmts">
+
+        <article class="xw-cmt">
+          <div class="xw-cmt__top">
+            <span class="xw-cmt__av" style="background:#0e8f70">林</span>
+            <span class="xw-cmt__who">林间小路 <span>观看 3 年 · 户外爱好者</span></span>
+          </div>
+          <p>第一次看到的洞穴片子能讲清楚“撤出”这件事。很多作品只拍到进洞的刺激，你们会花八分钟讲水位上涨后怎么按预案退，这个顺序让我很放心，也直接转给了我的队友。</p>
+          <div class="xw-cmt__foot"><span>有用 216</span><span>回复 14</span></div>
+        </article>
+
+        <article class="xw-cmt">
+          <div class="xw-cmt__top">
+            <span class="xw-cmt__av" style="background:#b07a12">何</span>
+            <span class="xw-cmt__who">何老师的地质课 <span>中学教师 · 科普引用</span></span>
+          </div>
+          <p>把《一条溪流如何切开石灰岩》整段放给了初二的学生，动画加实景的组合很清楚。唯一小意见是字幕偏小，教室投影后排看得有点吃力，希望官网能出大字号版本。</p>
+          <div class="xw-cmt__foot"><span>有用 158</span><span>回复 6</span></div>
+        </article>
+
+        <article class="xw-cmt">
+          <div class="xw-cmt__top">
+            <span class="xw-cmt__av" style="background:#5d93b8">阿</span>
+            <span class="xw-cmt__who">阿淮 <span>影像专业学生</span></span>
+          </div>
+          <p>后期那集是真干货，音轨分层讲得比我们课上细。就是节奏有点密，二十分钟里信息量太大，我看了三遍才记全。如果能有配套的文字笔记下载就更好了。</p>
+          <div class="xw-cmt__foot"><span>有用 132</span><span>回复 9</span></div>
+        </article>
+
+        <article class="xw-cmt">
+          <div class="xw-cmt__top">
+            <span class="xw-cmt__av" style="background:#5c3f74">豆</span>
+            <span class="xw-cmt__who">豆瓣菜 <span>家庭观众</span></span>
+          </div>
+          <p>带爸妈看了《带父母看洞》，我爸全程没说话，最后说了一句“这个拍得实在”。没有炫技，没有夸张配乐，就是安安静静走完一段路，我觉得挺好。</p>
+          <div class="xw-cmt__foot"><span>有用 204</span><span>回复 11</span></div>
+        </article>
+
+        <article class="xw-cmt">
+          <div class="xw-cmt__top">
+            <span class="xw-cmt__av" style="background:#8f3b34">老</span>
+            <span class="xw-cmt__who">老周探洞 <span>十年探洞者</span></span>
+          </div>
+          <p>说句实话，前几集的解说有点“教科书腔”，中段稍微拖。但装备清单那集我认，三光源冗余这点太多人不当回事。希望多拍点绳结细节特写，别老是全景。</p>
+          <div class="xw-cmt__foot"><span>有用 97</span><span>回复 18</span></div>
+        </article>
+
+        <article class="xw-cmt">
+          <div class="xw-cmt__top">
+            <span class="xw-cmt__av" style="background:#18a086">小</span>
+            <span class="xw-cmt__who">小满 <span>新入坑观众</span></span>
+          </div>
+          <p>本来以为会很吓人，结果看得很平静。最喜欢暗河那一集，水声特别治愈，晚上当背景音放着睡觉。评论区吵“慢不慢”我倒是觉得，慢正是它的好。</p>
+          <div class="xw-cmt__foot"><span>有用 76</span><span>回复 4</span></div>
+        </article>
+
+        <article class="xw-cmt">
+          <div class="xw-cmt__top">
+            <span class="xw-cmt__av" style="background:#3b6d8f">陈</span>
+            <span class="xw-cmt__who">陈工 <span>土木从业者</span></span>
+          </div>
+          <p>人工坑道那集讲支护结构讲得挺克制，没乱下结论，这点专业。提个建议：可以补一张坑道年代分层的简图，光看讲解难免记不住顺序。</p>
+          <div class="xw-cmt__foot"><span>有用 64</span><span>回复 3</span></div>
+        </article>
+
+        <article class="xw-cmt">
+          <div class="xw-cmt__top">
+            <span class="xw-cmt__av" style="background:#7a5a12">苏</span>
+            <span class="xw-cmt__who">苏木 <span>自然摄影爱好者</span></span>
+          </div>
+          <p>生物那集我最认可“不打扰”的态度，长焦加冷光源看得舒服。想知道具体用的光源型号和色温，官网如果能在作者档案里附设备清单就完美了。</p>
+          <div class="xw-cmt__foot"><span>有用 88</span><span>回复 7</span></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== M10 企业动态 + M11 合作品牌 ===== -->
+  <section class="xw-section" id="xw-news">
+    <div class="xw-wrap">
+      <span class="xw-eyebrow">企业动态</span>
+      <h2 class="xw-h2">官方发布与<em>合作进展</em></h2>
+      <p class="xw-lead">品牌动态、内容更新与线下活动预告，均以此处为官方唯一口径。</p>
+
+      <div class="xw-news">
+        <article class="xw-news__item">
+          <div class="xw-news__date">2026-11-18 <span>官方发布</span></div>
+          <div>
+            <h4>「无光世界」专题通过生态伦理评审，预计 12 月上线</h4>
+            <p>由三位外部生物学顾问参与的伦理评审已完成，所有涉及洞穴生物的拍摄流程调整为长焦远距＋冷光源，并新增“拍摄影响说明”片尾模板。</p>
+          </div>
+        </article>
+        <article class="xw-news__item">
+          <div class="xw-news__date">2026-11-09 <span>内容更新</span></div>
+          <div>
+            <h4>高清播放页上线章节标记与数据面板</h4>
+            <p>长片可按技术动作、地质讲解、现场记录分段跳转；数据面板同步显示绳长、用时与水位区间，方便观众与教学场景引用。</p>
+          </div>
+        </article>
+        <article class="xw-news__item">
+          <div class="xw-news__date">2026-10-27 <span>品牌故事</span></div>
+          <div>
+            <h4>直捣穴底与四家地方机构签署洞穴环境监测合作</h4>
+            <p>合作内容包括季度巡护、洞内废弃物清理与影像资料归档。所有监测数据将以去坐标形式在专题页公开，接受公众监督。</p>
+          </div>
+        </article>
+        <article class="xw-news__item">
+          <div class="xw-news__date">2026-10-12 <span>比赛报名</span></div>
+          <div>
+            <h4>第二届「洞底一分钟」短片挑战开始报名</h4>
+            <p>面向所有已完成官方安全培训的创作者，提交 60 秒洞内影像，重点考察信息表达而非画质。获奖作品将获得官网首页推荐与制作基金。</p>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="xw-h3" style="margin-top:40px">合作品牌与伙伴</h3>
+      <div class="xw-partners">
+        <div class="xw-partner"><div class="xw-partner__logo" style="background:#0e8f70">岩</div><b>岩野装备</b><span>绳索与头盔支持</span></div>
+        <div class="xw-partner"><div class="xw-partner__logo" style="background:#b07a12">地</div><b>地层研究所</b><span>科学顾问合作</span></div>
+        <div class="xw-partner"><div class="xw-partner__logo" style="background:#2a4a63">声</div><b>声场实验室</b><span>音频技术支持</span></div>
+        <div class="xw-partner"><div class="xw-partner__logo" style="background:#8f3b34">守</div><b>山野守护计划</b><span>公益协作机构</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== M12 FAQ + M13 投稿联系 ===== -->
+  <section class="xw-section xw-section--alt" id="xw-faq">
+    <div class="xw-wrap">
+      <span class="xw-eyebrow">帮助与投稿</span>
+      <h2 class="xw-h2">关于官网的<em>常见问题</em></h2>
+      <p class="xw-lead">如果你准备投稿，或想了解内容规范与版权，建议先读完这一节。</p>
+
+      <div class="xw-faq">
+        <details open>
+          <summary>官网上的洞穴影像是否都标注了具体位置？</summary>
+          <div class="xw-faq__body">不会。出于洞穴保护与后续研究考虑，我们只发布影像、方法与观察数据，不公开精确坐标与进入路线。这是直捣穴底长期执行的内容伦理约定，也是对所有合作机构与创作者的统一要求。</div>
+        </details>
+        <details>
+          <summary>高清播放是否需要注册或下载客户端？</summary>
+          <div class="xw-faq__body">官网直接支持网页端高清播放，无需下载额外客户端。部分长片提供解说音轨切换与章节跳转，移动端与桌面端均可使用。若网络条件有限，会自动降低码率以保证播放连续性。</div>
+        </details>
+        <details>
+          <summary>投稿需要具备哪些条件？</summary>
+          <div class="xw-faq__body">需要有本人拍摄或持有完整授权的原始素材，并完成官方安全与伦理培训。我们不接受无人机在洞穴内部飞行、强光直射生物、擅自采集样本的内容。投稿通过初审后会进入编辑对接流程，稿酬按内容类型与时长分档。</div>
+        </details>
+        <details>
+          <summary>如何报告内容中的事实性错误？</summary>
+          <div class="xw-faq__body">可在对应视频页点击“反馈”按钮，选择“事实勘误”并填写依据。编辑部会在七个工作日内核实，确认后在页面显著位置标注勘误时间与修改内容，并致谢提供线索的观众。</div>
+        </details>
+        <details>
+          <summary>为什么评价区会保留批评性留言？</summary>
+          <div class="xw-faq__body">因为口碑来自真实分歧。我们只处理人身攻击、隐私泄露与违法信息，不因观点不同而删除评论。对于节奏、字幕、信息密度等具体批评，编辑部会定期汇总并进入下一季的制作改进清单。</div>
+        </details>
+        <details>
+          <summary>官网内容可以用于教学或二次创作吗？</summary>
+          <div class="xw-faq__body">非商业教学场景可在署名并保留原片尾的前提下引用，建议同时标注官网与作者信息。商业用途与改编需提前申请授权。所有正版内容均保留署名权，转载时请勿裁剪作者信息与水印。</div>
+        </details>
+        <details>
+          <summary>线下探洞活动会公开招募吗？</summary>
+          <div class="xw-faq__body">会。官方线下活动均要求参与者具备基础体能并完成安全培训，报名信息只在本站公告条与企业动态中发布。我们不与任何第三方代招渠道合作，请注意甄别。</div>
+        </details>
+      </div>
+
+      <div class="xw-join" style="margin-top:36px">
+        <div>
+          <h2>把你的洞底影像，交给一个认真的平台</h2>
+          <p>无论是四十二分钟的深度长片、六十秒的短片挑战，还是一段只有水声的素材，我们都会认真看完并给出反馈。官方投稿通道长期开放。</p>
+          <div class="xw-join__actions">
+            <button class="xw-btn xw-btn--amber" type="button" data-xw-open="join">提交投稿信息</button>
+            <button class="xw-btn xw-btn--ghost" type="button" data-xw-open="report" style="border-color:rgba(255,255,255,.5);color:#fff">问题反馈</button>
+            <button class="xw-btn xw-btn--ghost" type="button" data-xw-open="share" style="border-color:rgba(255,255,255,.5);color:#fff">分享官网</button>
+          </div>
+        </div>
+        <div class="xw-join__box">
+          <b>投稿邮箱</b>
+          <span>creator@cavedepth.example</span>
+          <b style="margin-top:12px">合作与授权</b>
+          <span>pr@cavedepth.example</span>
+          <b style="margin-top:12px">审阅周期</b>
+          <span>一般 7—14 个工作日，均会回复</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== S8 页脚 ===== -->
+<footer class="xw-footer">
+  <div class="xw-wrap">
+    <div class="xw-footer__grid">
+      <div class="xw-footer__about">
+        <div class="xw-footer__brand">
+          <span class="xw-brand__mark">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 48 L26 16 L38 36 L45 26 L56 48 Z" fill="#18c39a"/><circle cx="47" cy="16" r="5" fill="#f2b544"/></svg>
+          </span>
+          <span>
+            <span class="xw-brand__name">直捣穴底</span>
+            <span class="xw-brand__sub">CAVE DEPTH · 官方</span>
+          </span>
+        </div>
+        <p>直捣穴底官方网站，专注洞穴探险与地质纪实的原创高清影像品牌。我们持续运营内容生态，坚持正版署名与生态伦理，致力于为创作者、研究者与观众提供值得信赖的精品内容。</p>
+      </div>
+      <div>
+        <h5>内容</h5>
+        <ul>
+          <li><a href="#xw-focus">焦点推荐</a></li>
+          <li><a href="#xw-videos">高清影像库</a></li>
+          <li><a href="#xw-topics">专题企划</a></li>
+          <li><a href="#xw-reviews">口碑与榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>品牌</h5>
+        <ul>
+          <li><a href="#xw-essay">品牌解析</a></li>
+          <li><a href="#xw-authors">创作者矩阵</a></li>
+          <li><a href="#xw-news">企业动态</a></li>
+          <li><a href="#xw-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>参与</h5>
+        <ul>
+          <li><a href="#xw-faq">投稿须知</a></li>
+          <li><a href="#xw-faq">版权与授权</a></li>
+          <li><a href="#xw-faq">内容勘误</a></li>
+          <li><a href="#xw-faq">合作联系</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="xw-footer__bottom">
+      <span>© 2026 直捣穴底（示例品牌）官方网站 · 版权所有 · 持续运营中</span>
+      <span>
+        <a href="#xw-top">返回顶部</a> ｜
+        <a href="#xw-faq">隐私与条款</a> ｜
+        <span>内容备案示例号：洞纪备 2026-0118</span>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<button class="xw-top" id="xw-top-btn" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 5 L12 19 M12 5 L5 12 M12 5 L19 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<div class="xw-toast" id="xw-toast" role="status" aria-live="polite"></div>
+
+<!-- 弹窗：作者档案 -->
+<div class="xw-modal" id="xw-modal-author" role="dialog" aria-modal="true" aria-labelledby="xw-author-title">
+  <div class="xw-modal__card">
+    <h3 id="xw-author-title">作者档案</h3>
+    <p class="xw-modal__sub" id="xw-author-sub">直捣穴底签约创作者</p>
+    <div id="xw-author-body" style="font-size:14px;color:#1d2c37;line-height:1.85"></div>
+    <div class="xw-modal__foot">
+      <button class="xw-btn xw-btn--ghost" type="button" data-xw-close>关闭</button>
+      <button class="xw-btn xw-btn--solid" type="button" data-xw-copy>复制档案链接</button>
+    </div>
+  </div>
+</div>
+
+<!-- 弹窗：投稿 -->
+<div class="xw-modal" id="xw-modal-join" role="dialog" aria-modal="true" aria-labelledby="xw-join-title">
+  <div class="xw-modal__card">
+    <h3 id="xw-join-title">提交投稿信息</h3>
+    <p class="xw-modal__sub">编辑部将在 7—14 个工作日内回复，请确保联系方式有效。</p>
+    <form id="xw-join-form">
+      <div class="xw-field"><label for="xw-j-name">创作者昵称</label><input id="xw-j-name" type="text" placeholder="例如：岩层笔记" required></div>
+      <div class="xw-field"><label for="xw-j-mail">联系邮箱</label><input id="xw-j-mail" type="email" placeholder="用于接收审阅结果" required></div>
+      <div class="xw-field"><label for="xw-j-type">内容类型</label>
+        <select id="xw-j-type">
+          <option>洞穴探险纪实长片</option>
+          <option>地质科普短片</option>
+          <option>洞穴生物观察</option>
+          <option>家庭轻探险记录</option>
+          <option>声音与幕后素材</option>
+        </select>
+      </div>
+      <div class="xw-field"><label for="xw-j-desc">作品简介</label><textarea id="xw-j-desc" placeholder="拍摄时长、洞段类型、是否已获拍摄许可、素材规格等"></textarea></div>
+      <div class="xw-modal__foot">
+        <button class="xw-btn xw-btn--ghost" type="button" data-xw-close>取消</button>
+        <button class="xw-btn xw-btn--solid" type="submit">提交审阅</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- 弹窗：反馈 -->
+<div class="xw-modal" id="xw-modal-report" role="dialog" aria-modal="true" aria-labelledby="xw-report-title">
+  <div class="xw-modal__card">
+    <h3 id="xw-report-title">问题反馈</h3>
+    <p class="xw-modal__sub">若涉及事实性错误，请尽量附上可核实依据。</p>
+    <form id="xw-report-form">
+      <div class="xw-field"><label for="xw-r-type">反馈类型</label>
+        <select id="xw-r-type">
+          <option>事实勘误</option>
+          <option>播放异常</option>
+          <option>版权与授权</option>
+          <option>评论区管理</option>
+          <option>其他建议</option>
+        </select>
+      </div>
+      <div class="xw-field"><label for="xw-r-desc">详细说明</label><textarea id="xw-r-desc" placeholder="请描述遇到的问题与所在页面位置" required></textarea></div>
+      <div class="xw-modal__foot">
+        <button class="xw-btn xw-btn--ghost" type="button" data-xw-close>取消</button>
+        <button class="xw-btn xw-btn--solid" type="submit">发送反馈</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- 弹窗：分享 -->
+<div class="xw-modal" id="xw-modal-share" role="dialog" aria-modal="true" aria-labelledby="xw-share-title">
+  <div class="xw-modal__card">
+    <h3 id="xw-share-title">分享直捣穴底官网</h3>
+    <p class="xw-modal__sub">选择平台后会复制链接，粘贴到对应应用即可。</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px">
+      <button class="xw-btn xw-btn--solid" type="button" data-xw-copy>复制官网链接</button>
+      <button class="xw-btn xw-btn--ghost" type="button" data-xw-share-tip="微信">微信</button>
+      <button class="xw-btn xw-btn--ghost" type="button" data-xw-share-tip="微博">微博</button>
+      <button class="xw-btn xw-btn--ghost" type="button" data-xw-share-tip="QQ">QQ</button>
+    </div>
+    <div class="xw-modal__foot">
+      <button class="xw-btn xw-btn--ghost" type="button" data-xw-close>关闭</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 移动端导航折叠 ---------- */
+  var burger = document.getElementById("xw-burger");
+  var nav = document.getElementById("xw-nav");
+  if (burger && nav) {
+    burger.addEventListener("click", function(){
+      var open = nav.classList.toggle("is-open");
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+      burger.setAttribute("aria-label", open ? "收起导航" : "展开导航");
+    });
+    nav.querySelectorAll("a").forEach(function(a){
+      a.addEventListener("click", function(){
+        if (window.innerWidth <= 760) {
+          nav.classList.remove("is-open");
+          burger.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
+  }
+
+  /* ---------- Toast ---------- */
+  var toastEl = document.getElementById("xw-toast");
+  var toastTimer = null;
+  function toast(msg){
+    if (!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add("is-show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove("is-show"); }, 2200);
+  }
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById("xw-search-input");
+  var searchBtn = document.getElementById("xw-search-btn");
+  var searchHint = document.getElementById("xw-search-hint");
+  var keywordsMap = [
+    { k: "竖井", hint: "竖井 → 找到 18 条相关影像，如《九十米竖井的第一视角下降》" },
+    { k: "暗河", hint: "暗河 → 找到 24 条相关影像，专题《暗河档案》持续更新中" },
+    { k: "生物", hint: "生物 → 找到 11 条相关影像，专题《无光世界》12 月上线" },
+    { k: "装备", hint: "装备 → 找到 9 条相关内容，含官方安全装备清单" },
+    { k: "剪辑", hint: "剪辑 → 找到 7 条幕后内容，作者「后期工坊」有系统课程" },
+    { k: "地质", hint: "地质 → 找到 31 条科普内容，可配合课堂引用" }
+  ];
+  function runSearch(){
+    if (!searchInput || !searchHint) return;
+    var q = searchInput.value.trim();
+    if (!q) {
+      searchHint.textContent = "请输入关键词，例如：竖井 / 暗河 / 生物 / 装备";
+      toast("已提示可搜索的关键词");
+      return;
+    }
+    var hit = keywordsMap.filter(function(item){ return q.indexOf(item.k) !== -1; });
+    if (hit.length) {
+      searchHint.textContent = hit[0].hint;
+      toast("已为你检索相关内容");
+    } else {
+      searchHint.textContent = "暂无「" + q.slice(0, 12) + "」的直接结果，可试试竖井、暗河、生物、装备、剪辑、地质";
+      toast("未匹配到结果，已给出建议关键词");
+    }
+  }
+  if (searchBtn) searchBtn.addEventListener("click", runSearch);
+  if (searchInput) {
+    searchInput.addEventListener("keydown", function(e){
+      if (e.key === "Enter") { e.preventDefault(); runSearch(); }
+    });
+  }
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.querySelectorAll("[data-xw-like]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var on = btn.classList.toggle("is-liked");
+      var textNode = Array.prototype.slice.call(btn.childNodes).filter(function(n){ return n.nodeType === 3; })[0];
+      var numEl = btn.querySelector("b");
+      if (numEl) {
+        var num = parseInt(numEl.textContent.replace(/[^0-9]/g, ""), 10) || 0;
+        numEl.textContent = (on ? num + 1 : Math.max(0, num - 1)).toLocaleString("en-US");
+      } else if (textNode) {
+        textNode.nodeValue = on ? " 已点赞 " : " 点赞 ";
+      }
+      toast(on ? "已点赞，感谢你的支持" : "已取消点赞");
+    });
+  });
+
+  document.querySelectorAll("[data-xw-save]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var on = btn.classList.toggle("is-on");
+      btn.textContent = on ? "已收藏" : "收藏";
+      toast(on ? "已加入收藏，稍后可在个人中心查看" : "已取消收藏");
+    });
+  });
+
+  /* ---------- 复制链接 ---------- */
+  function copyLink(){
+    var link = "https://cavedepth.example/";
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(link).then(function(){
+        toast("链接已复制，可粘贴分享");
+      }).catch(function(){
+        fallbackCopy(link);
+      });
+    } else {
+      fallbackCopy(link);
+    }
+  }
+  function fallbackCopy(text){
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); toast("链接已复制，可粘贴分享"); }
+    catch (err) { toast("复制失败，请手动记录官网名称"); }
+    document.body.removeChild(ta);
+  }
+  document.querySelectorAll("[data-xw-copy]").forEach(function(btn){
+    btn.addEventListener("click", copyLink);
+  });
+
+  /* ---------- 分享提示 ---------- */
+  document.querySelectorAll("[data-xw-share-tip]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var p = btn.getAttribute("data-xw-share-tip");
+      copyLink();
+      toast("已复制链接，请粘贴至" + p + "分享");
+    });
+  });
+
+  /* ---------- 弹窗控制 ---------- */
+  var modals = {
+    author: document.getElementById("xw-modal-author"),
+    join: document.getElementById("xw-modal-join"),
+    report: document.getElementById("xw-modal-report"),
+    share: document.getElementById("xw-modal-share")
+  };
+  function openModal(key){
+    Object.keys(modals).forEach(function(k){
+      if (modals[k]) modals[k].classList.remove("is-open");
+    });
+    if (modals[key]) {
+      modals[key].classList.add("is-open");
+      var focusable = modals[key].querySelector("input, textarea, select, button");
+      if (focusable) setTimeout(function(){ focusable.focus(); }, 60);
+    }
+  }
+  function closeModals(){
+    Object.keys(modals).forEach(function(k){
+      if (modals[k]) modals[k].classList.remove("is-open");
+    });
+  }
+  document.querySelectorAll("[data-xw-open]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var key = btn.getAttribute("data-xw-open");
+      if (key === "author") {
+        var name = btn.getAttribute("data-xw-author") || "创作者";
+        var data = authorData[name] || authorData["岩层笔记"];
+        var title = document.getElementById("xw-author-title");
+        var sub = document.getElementById("xw-author-sub");
+        var body = document.getElementById("xw-author-body");
+        if (title) title.textContent = name;
+        if (sub) sub.textContent = data.field + " · 直捣穴底签约创作者";
+        if (body) body.innerHTML = data.detail;
+      }
+      openModal(key);
+    });
+  });
+  document.querySelectorAll("[data-xw-close]").forEach(function(btn){
+    btn.addEventListener("click", closeModals);
+  });
+  Object.keys(modals).forEach(function(k){
+    var m = modals[k];
+    if (!m) return;
+    m.addEventListener("click", function(e){
+      if (e.target === m) closeModals();
+    });
+  });
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape") closeModals();
+  });
+
+  /* ---------- 作者档案数据 ---------- */
+  var authorData = {
+    "岩层笔记": {
+      field: "竖井与测绘",
+      detail: "<p>地质学背景，八年洞穴测绘经验，直捣穴底最早的签约作者之一。作品以竖井下降、坑道测绘与岩层剖面讲解为主，主张“先记录，再表达”。</p><p>代表作品：《九十米竖井的第一视角下降》《废弃坑道里的 300 米》。所有成片均附拍摄日志与装备清单，拍摄期间不接受任何商业植入。</p><p>正在推进：与顾问团合作整理洞穴竖井通用测绘模板，计划以开源表格形式发布，供研究者和新人创作者复用。</p>"
+    },
+    "暗河档案室": {
+      field: "水文记录",
+      detail: "<p>两人声音记录小组，专注洞穴水声、空腔混响与水文变化。设备以低噪录音机与防水话筒为主，作品画面克制，声音层次丰富。</p><p>代表作品：《暗河涨水的六个小时》《暗河回声：水位曲线与声场同步记录》。所有水文数据均以去坐标形式公开。</p><p>正在推进：整理一套洞穴声音素材库，向完成伦理培训的创作者开放非商业授权。</p>"
+    },
+    "石缝观察员": {
+      field: "洞穴生物",
+      detail: "<p>自然观察爱好者，长期跟拍洞内节肢动物、盲鱼与蝙蝠群。坚持长焦远距离与冷光源原则，每条片子片尾都会附“本次拍摄对生态的影响说明”。</p><p>代表作品：《洞穴生物的十分钟：盲鱼、马陆与蝙蝠群》。曾参与无光世界专题的伦理评审流程设计。</p><p>正在推进：与外部生物学顾问合作编写洞穴生物观察入门手册。</p>"
+    },
+    "慢速出发": {
+      field: "家庭与轻探险",
+      detail: "<p>前媒体编辑，现带家人做低强度户外记录。擅长把成熟洞段拍成普通人也能走的周末路线，强调休息点、讲解节奏与应急预案。</p><p>代表作品：《带父母看洞：一次低强度洞穴参观的完整记录》。这条片子是官网家庭观众留言最多的一条。</p><p>正在推进：整理一份面向亲子家庭的低强度洞穴参观攻略。</p>"
+    },
+    "后期工坊": {
+      field: "声音与剪辑",
+      detail: "<p>负责多部官方专题的后期统筹，主张把工作流公开。从素材命名、代理剪辑到音轨分层，均以可复现为第一原则。</p><p>代表作品：《剪辑室里的一夜：暗河回声的声音设计》。该片已成为许多新人创作者的入门参考。</p><p>正在推进：发布一套针对纪实长片的后期模板，含章节标记与勘误标注规范。</p>"
+    },
+    "地层讲台": {
+      field: "地质科普",
+      detail: "<p>高校教师兼职科普作者，擅长用动画与实景叠合解释喀斯特成因。内容被多所学校引入课堂，也常被家长用于亲子共学。</p><p>代表作品：《从洞外到洞内：一条溪流如何切开石灰岩》。片中示意动画由作者独立制作。</p><p>正在推进：推出适配课堂投影的大字号字幕版本与配套讲义。</p>"
+    }
+  };
+
+  /* ---------- 表单提交 ---------- */
+  var joinForm = document.getElementById("xw-join-form");
+  if (joinForm) {
+    joinForm.addEventListener("submit", function(e){
+      e.preventDefault();
+      var name = document.getElementById("xw-j-name").value.trim();
+      if (!name) { toast("请填写创作者昵称"); return; }
+      closeModals();
+      joinForm.reset();
+      toast("投稿信息已提交，编辑部将在 7—14 个工作日内回复");
+    });
+  }
+  var reportForm = document.getElementById("xw-report-form");
+  if (reportForm) {
+    reportForm.addEventListener("submit", function(e){
+      e.preventDefault();
+      var desc = document.getElementById("xw-r-desc").value.trim();
+      if (!desc) { toast("请填写详细说明"); return; }
+      closeModals();
+      reportForm.reset();
+      toast("反馈已发送，感谢你帮助官网持续改进");
+    });
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById("xw-top-btn");
+  function onScroll(){
+    if (!topBtn) return;
+    if (window.scrollY > 560) topBtn.classList.add("is-show");
+    else topBtn.classList.remove("is-show");
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+  if (topBtn) {
+    topBtn.addEventListener("click", function(){
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = document.querySelectorAll("[data-xw-count]");
+  function animateCounter(el){
+    var target = parseInt(el.getAttribute("data-xw-count"), 10) || 0;
+    var small = el.querySelector("small");
+    var smallHtml = small ? small.outerHTML : "";
+    var dur = 900, start = null;
+    function step(ts){
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = Math.round(target * eased);
+      el.innerHTML = val.toLocaleString("en-US") + smallHtml;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if ("IntersectionObserver" in window && counters.length) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+    counters.forEach(function(c){ io.observe(c); });
+  }
+
+  /* ---------- 导航高亮 ---------- */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll("#xw-nav a"));
+  var sections = navLinks.map(function(a){
+    var id = a.getAttribute("href");
+    if (id && id.charAt(0) === "#") return document.querySelector(id);
+    return null;
+  });
+  if ("IntersectionObserver" in window) {
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          var idx = sections.indexOf(entry.target);
+          if (idx >= 0) {
+            navLinks.forEach(function(a){ a.classList.remove("is-active"); });
+            navLinks[idx].classList.add("is-active");
+          }
+        }
+      });
+    }, { rootMargin: "-40% 0px -50% 0px" });
+    sections.forEach(function(s){ if (s) spy.observe(s); });
+  }
+
+})();
+</script>
+</body>
+  </html>
